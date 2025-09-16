@@ -47,19 +47,3 @@ The script will:
 
 - `sih_data.xlsx`: Excel file containing the scraped data.
 - `data_hash.txt`: Text file storing the MD5 hash of the current data.
-
-## Logging
-
-The script uses Python's logging module to output information and errors to the console. Logs include timestamps and levels (INFO, ERROR).
-
-## Error Handling
-
-- Handles network errors during webpage fetching.
-- Checks for the presence of the table on the webpage.
-- Validates data rows before processing.
-
-## Notes
-
-- The script skips the table header and processes only rows with at least 7 columns.
-- Problem statement text is extracted from anchor tags if present, otherwise from the cell text.
-- The script is designed to run periodically to keep the data up-to-date without unnecessary writes.
